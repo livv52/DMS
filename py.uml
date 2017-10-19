@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#D:/Facultate/Licenta2017/DMS/forms.py</OriginalElement>
+  <nodes>
+    <node x="0.0" y="1307.0">django.forms.models.ModelFormMetaclass</node>
+    <node x="354.5446428571428" y="1610.0">DMS.forms.FolderForm</node>
+    <node x="1052.5744047619046" y="245.0">_abcoll.Iterator</node>
+    <node x="1217.5744047619046" y="256.0">_abcoll.Iterable</node>
+    <node x="476.5" y="1318.0">django.forms.forms.Form</node>
+    <node x="679.8779761904761" y="1486.0">DMS.forms.PassworResetForm</node>
+    <node x="651.5744047619047" y="124.0">object</node>
+    <node x="368.87797619047615" y="512.0">django.forms.forms.BaseForm</node>
+    <node x="126.15476190476193" y="1508.0">django.forms.models.ModelForm</node>
+    <node x="172.54464285714278" y="1610.0">DMS.forms.DocumentForm</node>
+    <node x="16.544642857142776" y="1610.0">DMS.forms.UserForm</node>
+    <node x="87.87797619047615" y="820.0">django.forms.forms.DeclarativeFieldsMetaclass</node>
+    <node x="767.0744047619047" y="0.0">_abcoll.Hashable</node>
+    <node x="869.3779761904761" y="1230.0">django.forms.models.BaseModelForm</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="object" target="_abcoll.Hashable">
+      <point x="0.0" y="-169.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="DMS.forms.UserForm" target="django.forms.models.ModelForm">
+      <point x="0.0" y="-26.0" />
+      <point x="84.54464285714278" y="1585.0" />
+      <point x="157.9880952380953" y="1585.0" />
+      <point x="-63.66666666666666" y="15.0" />
+    </edge>
+    <edge source="django.forms.models.ModelForm" target="django.forms.models.ModelFormMetaclass">
+      <point x="-47.75" y="-15.0" />
+      <point x="173.90476190476193" y="1466.0" />
+      <point x="119.0" y="1466.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="django.forms.forms.Form" target="django.forms.forms.BaseForm">
+      <point x="39.25" y="-15.0" />
+      <point x="594.25" y="1205.0" />
+      <point x="810.1279761904761" y="1205.0" />
+      <point x="-441.25" y="334.0" />
+    </edge>
+    <edge source="django.forms.forms.Form" target="django.forms.forms.DeclarativeFieldsMetaclass">
+      <point x="-39.25" y="-15.0" />
+      <point x="515.75" y="1205.0" />
+      <point x="283.62797619047615" y="1205.0" />
+      <point x="65.25" y="26.0" />
+    </edge>
+    <edge source="django.forms.models.BaseModelForm" target="django.forms.forms.BaseForm">
+      <point x="0.0" y="-103.0" />
+      <point x="1494.8779761904761" y="1205.0" />
+      <point x="1692.6279761904761" y="1205.0" />
+      <point x="441.25" y="334.0" />
+    </edge>
+    <edge source="DMS.forms.FolderForm" target="django.forms.models.ModelForm">
+      <point x="0.0" y="-26.0" />
+      <point x="426.5446428571428" y="1585.0" />
+      <point x="285.32142857142856" y="1585.0" />
+      <point x="63.66666666666663" y="15.0" />
+    </edge>
+    <edge source="django.forms.models.ModelForm" target="django.forms.models.BaseModelForm">
+      <point x="47.75" y="-15.0" />
+      <point x="269.4047619047619" y="1466.0" />
+      <point x="1494.8779761904761" y="1466.0" />
+      <point x="0.0" y="103.0" />
+    </edge>
+    <edge source="django.forms.forms.BaseForm" target="_abcoll.Iterable">
+      <point x="588.3333333333335" y="-334.0" />
+      <point x="1839.7113095238096" y="487.0" />
+      <point x="1289.0744047619046" y="487.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="django.forms.forms.BaseForm" target="_abcoll.Iterator">
+      <point x="0.0" y="-334.0" />
+      <point x="1251.3779761904761" y="487.0" />
+      <point x="1125.0744047619046" y="487.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="DMS.forms.PassworResetForm" target="django.forms.forms.Form">
+      <point x="0.0" y="-37.0" />
+      <point x="770.8779761904761" y="1456.0" />
+      <point x="555.0" y="1456.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="DMS.forms.DocumentForm" target="django.forms.models.ModelForm">
+      <point x="0.0" y="-26.0" />
+      <point x="253.54464285714278" y="1585.0" />
+      <point x="221.65476190476193" y="1585.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="django.forms.forms.BaseForm" target="object">
+      <point x="-588.3333333333335" y="-334.0" />
+      <point x="663.0446428571427" y="487.0" />
+      <point x="842.0744047619047" y="487.0" />
+      <point x="0.0" y="169.0" />
+    </edge>
+    <edge source="django.forms.models.ModelFormMetaclass" target="django.forms.forms.DeclarativeFieldsMetaclass">
+      <point x="0.0" y="-26.0" />
+      <point x="119.0" y="1205.0" />
+      <point x="153.12797619047615" y="1205.0" />
+      <point x="-65.25" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6329369797859691" x="1284.0" y="1370.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+

@@ -1,0 +1,57 @@
+{% extends 'DMS/base.html' %}
+{% block title %}History{% endblock %}
+
+{% block body %}
+    <div class="container-fluid documents-container">
+
+        <div class="row">
+
+            <div class="col-sm-8 col-md-9">
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Versions</th>
+                                <th>User</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for document in documents %}
+                                {% for version in document.versions %}
+
+                                    <tr>
+                                        <td>
+                                            {% if document.id == request.document.docs.id %}
+                                                <li><a href="{{ version.path.url }}"
+                                                       target="_blank">{{ version.date }}</a>
+                                                </li>
+                                            {% endif %}
+
+                                        </td>
+
+                                        <td>
+
+                                            {{ version.user_id}}
+
+
+                                        </td>
+                                    </tr>
+
+                                {% endfor %}
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}
+

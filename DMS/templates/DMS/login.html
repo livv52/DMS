@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'DMS/login.css' %}"/>
+    <!-- Is anyone getting tired of repeatedly entering the header over and over?? -->
+    <title>DMS</title>
+</head>
+
+<body>
+<h1>Login to DMS</h1>
+<div class="container">
+    <div class="card card-container">
+        <h2 class='login_title text-center'>Login</h2>
+        <hr>
+
+
+        {% csrf_token %}
+        <form class="form-signin" action="." method="post">
+            {% csrf_token %}
+            <span id="reauth-email" class="reauth-email"></span>
+            <p class="input_title">Email</p>
+            <input type="text" name="email" id="email" class="login_box" placeholder="user01@dms.com">
+            <p class="input_title">Password</p>
+            <input type="password" name="password" id="password" class="login_box" placeholder="******" required>
+            <div id="remember" class="checkbox">
+
+            </div>
+            {% csrf_token %}
+
+            <input type="submit" id="submit" name="login" class="login loginmodal-submit" value="Login">
+
+            <div class="login-help">
+                <div>
+                    <center><a href="{% url 'DMS:reset_password' %}">
+                        Forgot your password?
+                    </a>
+                    </center>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>
